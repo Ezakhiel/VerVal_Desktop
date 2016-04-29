@@ -6,11 +6,11 @@ class FileExtensionManager
 public:
 	FileExtensionManager();
 	virtual ~FileExtensionManager();
-	virtual bool isExtensionValid(std::string s);
-	virtual bool setValue(bool s);
+	virtual bool isExtensionValid(std::string s)=0;
+	virtual void setValue(bool s)=0;
 };
 
-class FakeFileExtensionManager :FileExtensionManager
+class FakeFileExtensionManager : public FileExtensionManager
 {
 private:
 	bool v;
@@ -18,14 +18,5 @@ public:
 	FakeFileExtensionManager();
 	virtual ~FakeFileExtensionManager();
 	virtual bool isExtensionValid(std::string s);
-	virtual bool setValue(bool s);
-};
-
-class RealFileExtensionManager :FileExtensionManager
-{
-public:
-	RealFileExtensionManager();
-	virtual ~RealFileExtensionManager();
-	virtual bool isExtensionValid(std::string s);
-	virtual bool setValue(bool s);
+	virtual void setValue(bool s);
 };

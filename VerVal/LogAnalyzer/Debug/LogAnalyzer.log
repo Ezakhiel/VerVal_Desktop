@@ -1,16 +1,20 @@
-﻿Build started 4/15/2016 9:49:04 AM.
-     1>Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\LogAnalyzer.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/29/2016 9:37:16 AM.
+     1>Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\LogAnalyzer.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
-         F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FileExtensionManager.cpp Log_Analyzer.cpp
+         F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FileExtensionManager.cpp FileExtensionManagerFactory.cpp Log_Analyzer.cpp TestableLogAnalyzer.cpp
+         TestableLogAnalyzer.cpp
          Log_Analyzer.cpp
+         FileExtensionManagerFactory.cpp
          FileExtensionManager.cpp
-     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\loganalyzer\fileextensionmanager.cpp(5): error C2011: 'FileExtensionManager' : 'class' type redefinition
-                 f:\3. ev\verifikacio-validacio\verval_desktop\verval\loganalyzer\fileextensionmanager.h(5) : see declaration of 'FileExtensionManager'
-     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\loganalyzer\fileextensionmanager.cpp(16): error C2504: 'FileExtensionManager' : base class undefined
-     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\loganalyzer\fileextensionmanager.cpp(23): error C2065: 'v' : undeclared identifier
          Generating Code...
-     1>Done Building Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\LogAnalyzer.vcxproj" (Build target(s)) -- FAILED.
+       Lib:
+         F:\Visual Studio 2013 Pro\VC\bin\Lib.exe /OUT:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\LogAnalyzer.lib" /NOLOGO Debug\FileExtensionManager.obj
+         Debug\FileExtensionManagerFactory.obj
+         Debug\Log_Analyzer.obj
+         Debug\TestableLogAnalyzer.obj
+         LogAnalyzer.vcxproj -> F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\LogAnalyzer.lib
+     1>Done Building Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\LogAnalyzer.vcxproj" (Rebuild target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.63
+Time Elapsed 00:00:01.45

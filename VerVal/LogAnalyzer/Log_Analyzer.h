@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "FileExtensionManager.h"
+#include "FileExtensionManagerFactory.h"
 
 class Log_Analyzer
 {
@@ -11,5 +11,6 @@ public:
 	Log_Analyzer();
 	~Log_Analyzer();
 	bool IsValidLogFileName(std::string s);
+	virtual FileExtensionManager* getMGR();
 	bool isTheFileValid(std::string s);
 };

@@ -4,7 +4,7 @@
 #include <memory>
 
 using namespace std;
-
+/*
 /*
 TEST(Log_Analyzer, IsValidLogFileName_ValidFileName_ReturnsTrue){
 Log_Analyzer log;
@@ -51,4 +51,3 @@ TEST_P(PLogSystemTest, isTheFileValid_invalidFileName_returnFalse)
 INSTANTIATE_TEST_CASE_P(InstantiationName,
 	PLogSystemTest,
 	::testing::Values("a.sla", "b.sla", "c.sl"));
-

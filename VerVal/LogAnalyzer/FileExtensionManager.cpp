@@ -1,29 +1,18 @@
-#pragma once
 #include <string>
 #include "FileExtensionManager.h"
 
-class FileExtensionManager : public FileExtensionManager
-{
-public:
-	FileExtensionManager(){}
-	~FileExtensionManager(){}
 
-	bool isExtensionValid(std::string s);
-	virtual bool setValue(std::string s);
-};
+FileExtensionManager::FileExtensionManager(){}
+FileExtensionManager::~FileExtensionManager(){}
 
-class FakeFileExtensionManager : public FileExtensionManager
-{
-public:
-	FakeFileExtensionManager(){}
-	~FakeFileExtensionManager(){}
+	FakeFileExtensionManager::FakeFileExtensionManager(){}
+	FakeFileExtensionManager::~FakeFileExtensionManager(){}
 
-	bool isExtensionValid(std::string s)
+	bool FakeFileExtensionManager::isExtensionValid(std::string s)
 	{
 		return v;
 	}
-	virtual bool setValue(bool v2)
+	void FakeFileExtensionManager::setValue(bool v2)
 	{
 		v = v2;
 	}
-};

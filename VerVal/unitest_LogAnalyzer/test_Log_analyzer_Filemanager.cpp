@@ -8,7 +8,7 @@ TEST(LogAnalyzer, isValidLogFileName_ValidLogFileName_ReturnsTrue)
 {
 	FakeFileExtensionManager *fem = new FakeFileExtensionManager();
 	fem->setValue(true);
-	Log_Analyzer la(fem);
+	Log_Analyzer *la = new Log_Analyzer(fem);
 	string s = "filename.sln";
-	ASSERT_TRUE(la.IsValidLogFileName(s));
+	ASSERT_TRUE(la->IsValidLogFileName(s));
 }

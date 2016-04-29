@@ -18,5 +18,8 @@
     <ClCompile Include="test_LogAnalyzer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="test_Log_analyzer_Filemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

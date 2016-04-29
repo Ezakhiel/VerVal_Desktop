@@ -12,7 +12,7 @@ ASSERT_TRUE(log.IsValidLogFileName(s));
 
 // Parametrizalt tesztek <-- HOMEWORK
 
-class Log_Analyzer_Test : public ::testing::Test
+class Log_Analyzer_Test : public testing::TestWithParam<string>
 {
 public:
 
@@ -27,6 +27,9 @@ public:
 	}
 };
 
+INSTANTIATE_TEST_CASE_P(Default,MyStringTest,
+	testing::Values("me.slr", "geek", "freek.slr"));
+
 TEST_F(Log_Analyzer_Test, IsValidLogFileName_ValidFileName_ReturnsTrue)
 {
 	string s = "valami.slr";
@@ -34,8 +37,8 @@ TEST_F(Log_Analyzer_Test, IsValidLogFileName_ValidFileName_ReturnsTrue)
 	
 }
 
-TEST_F(Log_Analyzer_Test, IsValidLogFileName_ValidFileName_NoThrow)
+TEST_P(Log_Analyzer_Test, IsValidLogFileName_ValidFileNameLength_NoThrow)
 {
 	string s = "alma.slr";
-	ASSERT_TRUE(log->IsValidLogFileName(s));
+	ASSERT_TRUE(log->IsValidLogFileName(GetParam()));
 }

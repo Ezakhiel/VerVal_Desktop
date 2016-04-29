@@ -78,6 +78,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="test_LogAnalyzer.cpp" />
+    <ClCompile Include="test_Log_analyzer_Filemanager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LogAnalyzer\LogAnalyzer.vcxproj">

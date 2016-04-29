@@ -1,15 +1,26 @@
-﻿Build started 4/14/2016 11:42:47 AM.
+﻿Build started 4/15/2016 9:49:07 AM.
      1>Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test_LogAnalyzer.cpp
+         F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test_LogAnalyzer.cpp test_Log_analyzer_Filemanager.cpp
+         test_Log_analyzer_Filemanager.cpp
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_log_analyzer_filemanager.cpp(11): error C2664: 'Log_Analyzer::Log_Analyzer(const Log_Analyzer &)' : cannot convert argument 1 from 'FakeFileExtensionManager' to 'FileExtensionManager *'
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
          test_LogAnalyzer.cpp
-       Link:
-         F:\Visual Studio 2013 Pro\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.lib" /MACHINE:X86 Debug\test_LogAnalyzer.obj
-         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\LogAnalyzer.lib"
-         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\VerVal.lib"
-         unitest_LogAnalyzer.vcxproj -> F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.exe
-     1>Done Building Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" (Build target(s)).
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(22): error C2512: 'Log_Analyzer' : no appropriate default constructor available
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2653: 'MyStringTest' : is not a class or namespace name
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2065: 'ParamType' : undeclared identifier
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2923: 'testing::internal::ParamGenerator' : 'ParamType' is not a valid template type argument for parameter 'T'
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2079: 'gtest_DefaultMyStringTest_EvalGenerator_' uses undefined class 'testing::internal::ParamGenerator'
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2662: 'testing::internal::ParamGenerator<T>::ParamGenerator(const testing::internal::ParamGenerator<T> &)' : cannot convert 'this' pointer from 'testing::internal::ParamGenerator' to 'testing::internal::ParamGenerator<T> &'
+                 Reason: cannot convert from 'testing::internal::ParamGenerator' to 'testing::internal::ParamGenerator<T>'
+                 Conversion requires a second user-defined-conversion operator or constructor
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2065: 'MyStringTest' : undeclared identifier
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2974: 'testing::internal::ParameterizedTestCaseRegistry::GetTestCasePatternHolder' : invalid template argument for 'TestCase', type expected
+                 f:\3. ev\verifikacio-validacio\gtest-1.7.0-rc1\gtest-1.7.0\include\gtest\internal\gtest-param-util.h(569) : see declaration of 'testing::internal::ParameterizedTestCaseRegistry::GetTestCasePatternHolder'
+     1>f:\3. ev\verifikacio-validacio\verval_desktop\verval\unitest_loganalyzer\test_loganalyzer.cpp(31): error C2227: left of '->AddTestCaseInstantiation' must point to class/struct/union/generic type
+         Generating Code...
+     1>Done Building Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.97
+Time Elapsed 00:00:01.13

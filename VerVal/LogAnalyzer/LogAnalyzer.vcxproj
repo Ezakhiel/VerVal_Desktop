@@ -78,9 +78,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="FileExtensionManager.h" />
     <ClInclude Include="Log_Analyzer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FileExtensionManager.cpp" />
     <ClCompile Include="Log_Analyzer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

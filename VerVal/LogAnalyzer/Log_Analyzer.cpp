@@ -8,6 +8,11 @@ Log_Analyzer::Log_Analyzer(FileExtensionManager *logman)
 	logManage = logman;
 }
 
+Log_Analyzer::Log_Analyzer()
+{
+
+}
+
 bool Log_Analyzer::IsValidLogFileName(string s) 
 {
 	return logManage->isExtensionValid(s);

@@ -1,6 +1,8 @@
 #include "LogAnalyzer/Log_Analyzer.h"
 #include "gtest/gtest.h"
 #include <string>
+#include <memory>
+
 using namespace std;
 
 /*
@@ -12,23 +14,19 @@ ASSERT_TRUE(log.IsValidLogFileName(s));
 
 // Parametrizalt tesztek <-- HOMEWORK
 
-class Log_Analyzer_Test : public testing::TestWithParam<string>
+class Log_Analyzer_Test : public testing::Test
 {
 public:
 
-	Log_Analyzer* log;
+	std::shared_ptr<Log_Analyzer> log;
 	void SetUp()
 	{
-		log = new Log_Analyzer();
+		log = std::shared_ptr<Log_Analyzer>(new Log_Analyzer());
 	}
 	void TearDown()
 	{
-		delete log;
 	}
 };
-
-INSTANTIATE_TEST_CASE_P(Default,MyStringTest,
-	testing::Values("me.slr", "geek", "freek.slr"));
 
 TEST_F(Log_Analyzer_Test, IsValidLogFileName_ValidFileName_ReturnsTrue)
 {
@@ -37,8 +35,20 @@ TEST_F(Log_Analyzer_Test, IsValidLogFileName_ValidFileName_ReturnsTrue)
 	
 }
 
-TEST_P(Log_Analyzer_Test, IsValidLogFileName_ValidFileNameLength_NoThrow)
+class PLogSystemTest : public testing::TestWithParam<const char*>
 {
-	string s = "alma.slr";
+public:
+	std::shared_ptr<Log_Analyzer> log;
+	virtual void SetUp(){ log = std::shared_ptr<Log_Analyzer>(new Log_Analyzer()); }
+	virtual void TearDown(){}
+};
+
+TEST_P(PLogSystemTest, isTheFileValid_invalidFileName_returnFalse)
+{
 	ASSERT_TRUE(log->IsValidLogFileName(GetParam()));
 }
+
+INSTANTIATE_TEST_CASE_P(InstantiationName,
+	PLogSystemTest,
+	::testing::Values("a.sla", "b.sla", "c.sl"));
+

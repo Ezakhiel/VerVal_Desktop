@@ -1,20 +1,20 @@
-#include <string>
 #include "FileExtensionManagerFactory.h"
+using std::shared_ptr;
 
-FileExtensionManagerFactory* FileExtensionManagerFactory::me;
+shared_ptr<FileExtensionManagerFactory> FileExtensionManagerFactory::me = nullptr;
 
 FileExtensionManagerFactory::FileExtensionManagerFactory(){}
 
-FileExtensionManager* FileExtensionManagerFactory::getFileExtensionManager(){
-		return fem;
-	}
-void FileExtensionManagerFactory::setFileExtensionManager(FileExtensionManager *fm){
+shared_ptr<FileExtensionManager> FileExtensionManagerFactory::getFileExtensionManager(){
+	return fem;
+}
+void FileExtensionManagerFactory::setFileExtensionManager(shared_ptr<FileExtensionManager> fm){
 	fem = fm;
 }
-FileExtensionManagerFactory* FileExtensionManagerFactory::getFEMFactory(){
-	if (me == NULL)
+shared_ptr<FileExtensionManagerFactory> FileExtensionManagerFactory::getFEMFactory(){
+	if (me == nullptr)
 	{
-		me = new FileExtensionManagerFactory();
+		me = shared_ptr<FileExtensionManagerFactory>(new FileExtensionManagerFactory);
 	}
 	return me;
 }

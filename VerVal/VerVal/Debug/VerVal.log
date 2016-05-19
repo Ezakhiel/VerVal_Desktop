@@ -1,4 +1,4 @@
-﻿Build started 4/29/2016 9:37:16 AM.
+﻿Build started 5/6/2016 9:37:53 AM.
      1>Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\VerVal\VerVal.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\gtest-1.7.0-rc1\gtest-1.7.0\src\gtest-all.cc" "..\..\..\gtest-1.7.0-rc1\gtest-1.7.0\src\gtest_main.cc"
@@ -13,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.74
+Time Elapsed 00:00:02.14

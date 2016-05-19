@@ -1,24 +1,30 @@
-﻿Build started 4/29/2016 9:37:20 AM.
-     1>Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 5/6/2016 7:11:44 AM.
+     1>Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test_LogAnalyzer.cpp test_Log_Analyzer_FEMFactory.cpp test_Log_analyzer_Filemanager.cpp test_testavlLogAnalyzer.cpp
+         F:\Visual Studio 2013 Pro\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FakeFileExtensionManager.cpp test_LogAnalyzer.cpp test_Log_Analyzer_FEMFactory.cpp test_Log_analyzer_Filemanager.cpp test_testavlLogAnalyzer.cpp
+         FakeFileExtensionManager.cpp
+         Generating Code...
+         Compiling...
          test_testavlLogAnalyzer.cpp
          test_Log_analyzer_Filemanager.cpp
          test_Log_Analyzer_FEMFactory.cpp
          test_LogAnalyzer.cpp
          Generating Code...
        Link:
-         F:\Visual Studio 2013 Pro\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.lib" /MACHINE:X86 Debug\test_LogAnalyzer.obj
+         F:\Visual Studio 2013 Pro\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.lib" /MACHINE:X86 Debug\FakeFileExtensionManager.obj
+         Debug\test_LogAnalyzer.obj
          Debug\test_Log_Analyzer_FEMFactory.obj
          Debug\test_Log_analyzer_Filemanager.obj
          Debug\test_testavlLogAnalyzer.obj
-         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\LogAnalyzer.lib"
          "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\VerVal.lib"
-     1>test_Log_analyzer_Filemanager.obj : error LNK2019: unresolved external symbol "public: __thiscall Log_Analyzer::Log_Analyzer(class FileExtensionManager *)" (??0Log_Analyzer@@QAE@PAVFileExtensionManager@@@Z) referenced in function "private: virtual void __thiscall LogAnalyzer_isValidLogFileName_ValidLogFileName_ReturnsTrue_Test::TestBody(void)" (?TestBody@LogAnalyzer_isValidLogFileName_ValidLogFileName_ReturnsTrue_Test@@EAEXXZ)
-     1>LogAnalyzer.lib(Log_Analyzer.obj) : error LNK2001: unresolved external symbol "public: virtual class FileExtensionManager * __thiscall Log_Analyzer::getMGR(void)" (?getMGR@Log_Analyzer@@UAEPAVFileExtensionManager@@XZ)
-     1>F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.exe : fatal error LNK1120: 2 unresolved externals
-     1>Done Building Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" (Rebuild target(s)) -- FAILED.
+         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\Debug\FileExtensionManager.obj"
+         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\Debug\FileExtensionManagerFactory.obj"
+         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\Debug\Log_Analyzer.obj"
+         "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\LogAnalyzer\Debug\TestableLogAnalyzer.obj"
+     1>Log_Analyzer.obj : error LNK2001: unresolved external symbol "public: virtual class FileExtensionManager * __thiscall Log_Analyzer::getMGR(void)" (?getMGR@Log_Analyzer@@UAEPAVFileExtensionManager@@XZ)
+     1>F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\Debug\unitest_LogAnalyzer.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "F:\3. ev\Verifikacio-Validacio\VerVal_Desktop\VerVal\unitest_LogAnalyzer\unitest_LogAnalyzer.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.87
+Time Elapsed 00:00:02.76

@@ -77,6 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FakeFileExtensionManager.cpp" />
     <ClCompile Include="test_LogAnalyzer.cpp" />
     <ClCompile Include="test_Log_Analyzer_FEMFactory.cpp" />
     <ClCompile Include="test_Log_analyzer_Filemanager.cpp" />
@@ -89,11 +90,14 @@
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
-      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
     <ProjectReference Include="..\VerVal\VerVal.vcxproj">
       <Project>{e8371bda-f010-4bc9-a9c7-379c8a991cee}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FakeFileExtensionManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

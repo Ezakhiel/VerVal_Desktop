@@ -4,7 +4,7 @@
 #include "gtest/gtest.h"
 #include <string>
 using namespace std;
-
+/*
 TEST(LogAnalyzer, isValidLogFileName_FileExtensionManagerFactory)
 {
 	FileExtensionManagerFactory* factory = FileExtensionManagerFactory::getFEMFactory();
@@ -15,3 +15,4 @@ TEST(LogAnalyzer, isValidLogFileName_FileExtensionManagerFactory)
 	string s = "filename.sln";
 	ASSERT_TRUE(la->IsValidLogFileName(s));
 }
+*/

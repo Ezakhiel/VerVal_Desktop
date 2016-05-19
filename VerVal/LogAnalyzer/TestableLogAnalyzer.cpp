@@ -3,7 +3,7 @@
 using namespace std;
 
 FileExtensionManager* TestableLogAnalyzer::getMGR(){
-	return new FakeFileExtensionManager();
+	return 0;
 }
 
 bool TestableLogAnalyzer::IsValidLogFileName(string s){

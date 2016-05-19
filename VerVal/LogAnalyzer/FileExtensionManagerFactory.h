@@ -1,14 +1,14 @@
 #pragma once
-#include <string>
 #include "FileExtensionManager.h"
+#include <memory>
 
 class FileExtensionManagerFactory {
 private:
-	FileExtensionManager *fem;
-	static FileExtensionManagerFactory *me;
+	std::shared_ptr<FileExtensionManager> fem;
+	static std::shared_ptr<FileExtensionManagerFactory> me;
 	FileExtensionManagerFactory();
 public:
-	void setFileExtensionManager(FileExtensionManager* fm);
-	FileExtensionManager* getFileExtensionManager();
-	static FileExtensionManagerFactory* getFEMFactory();
+	void setFileExtensionManager(std::shared_ptr<FileExtensionManager> fm);
+	std::shared_ptr<FileExtensionManager> getFileExtensionManager();
+	static std::shared_ptr<FileExtensionManagerFactory> getFEMFactory();
 };
